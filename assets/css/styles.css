@@ -327,6 +327,17 @@ main{
   margin-bottom: 4rem;
 }
 
+.window-notice {
+  background: rgba(33, 41, 52, .85);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+}
+
 .about__images{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -347,7 +358,7 @@ main{
 /*! === BLOG === */
 
 .blog{
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 12rem;
 }
 

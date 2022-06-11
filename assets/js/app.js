@@ -67,3 +67,15 @@ sr.reveal('.services__list, .about__images, .post--right', {
 sr.reveal('.footer__container', {
     origin: 'top'
 });
+
+//! === POP-UP SWEETIE ===
+
+const popToggler = document.querySelector('#popToggler');
+
+const togglePop = () => {
+    swal("No hay más información!", {
+        buttons: ["XD", "Aceptar"],
+      });
+};
+
+popToggler.addEventListener('click', togglePop);

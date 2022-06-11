@@ -18,7 +18,7 @@
     <!--! === HEADER === -->
     <header class="header">
         <nav class="navbar container">
-            <a href="./index.html" class="navbar__logo">
+            <a href="#" class="navbar__logo">
                 <img src="./assets/images/Titulo.png" alt="" class="navbar__logo-image">
             </a>
             <div class="navbar__menu">
@@ -120,7 +120,8 @@
                 <div class="about__information">
                     <h2 class="about__information-title title">Acerca de mí</h2>
                     <p class="about__information-description">Descripción [EDITAR]</p>
-                    <a href="#" class="btn btn--text btn-green">Más información</a>
+                    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                    <span class="btn btn--text btn-green" id="popToggler">Más información</span>
                 </div>
                 <div class="about__images">
                     <img src="./assets/images/about_image_top.png" alt="" class="about__images-image about__images-image--top">
@@ -133,23 +134,20 @@
         <div class="blog__container container">
             <div class="blog__metadata section-metadata">
                 <h2 class="title">Blogs más recientes</h2>
-                <p class="blog__metadata-description section-metadata__description">Muchos [EDITAR]</p>
-                <a href="#" class="btn btn--text btn--transparent">Ver todas las publicaciones</a>
+                <p class="blog__metadata-description section-metadata__description">Aquí puedes ver una lista completa con todos los blogs que he creado.</p>
             </div>
             <article class="blog__post post--left">
                 <picture class="blog__post-image">
-                    <source media="(min-width: 450px)" srcset="./assets/images/blog_post_1.png">
-                    <img src="./assets/images/blog_post_1_small.png" alt="">
+                    <img src="./assets/images/blog_1.png" alt="">
                 </picture>
-                <h3 class="blog__post-title title">Titulo 1</h3>
-                <a href="#" class="btn btn--text btn--transparent">Ver blog</a>
+                <h3 class="blog__post-title title">Para chuparse los dedos</h3>
+                <a href="https://bit.ly/recetasRDA" class="btn btn--text btn--transparent">Ver blog</a>
             </article>
             <article class="blog__post post--right">
                 <picture class="blog__post-image">
-                    <source media="(min-width: 450px)" srcset="./assets/images/blog_post_2.png">
-                    <img src="./assets/images/blog_post_2_small.png" alt="">
+                    <img src="./assets/images/blog_2.png" alt="">
                 </picture>
-                <h3 class="blog__post-title title">Titulo 2</h3>
+                <h3 class="blog__post-title title">Raul RDA (este blog)</h3>
                 <a href="#" class="btn btn--text btn--transparent">Ver blog</a>
             </article>
         </section>
@@ -163,10 +161,10 @@
             </div>
             <span class="footer__separator"></span>
             <div class="footer__group">
-                <a href="./index.html" class="footer__logo">
+                <a href="#" class="footer__logo">
                     <img src="./assets/images/Titulo.png" alt="">
                 </a>
-                <p class="footer__description">SIUUUUUUUUUUU</p>
+                <p class="footer__description">Si quieres contactar conmigo, haz clic en el botón "CONTÁCTAME" o ve a mis redes sociales:</p>
                 <ul class="footer__list">
                     <li class="footer__list-item">
                         <a href="https://www.instagram.com/Raul_RDA/" class="footer__list-link">
