@@ -303,6 +303,11 @@ main{
   margin-bottom: 1rem;
 }
 
+.services__list-description-2{
+  margin-top: 2rem;
+  font-size:smaller;
+}
+
 /*! === ACERCA === */
 
 .about{
