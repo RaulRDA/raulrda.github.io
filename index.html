@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raul_RDA</title>
+    <!-- REMIXICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!--! === HEADER === -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="./index.html" class="navbar__logo">
+                <img src="./assets/images/Titulo.png" alt="" class="navbar__logo-image">
+            </a>
+            <div class="navbar__menu">
+                <ul class="navbar__list">
+                    <li class="navbar__list-item">
+                        <a href="#home" class="navbar__list-link">Casa</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#proyectos" class="navbar__list-link">Proyectos</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#servicios" class="navbar__list-link">Servicios</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#acerca-de-mi" class="navbar__list-link">Acerca de mí</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#blogs" class="navbar__list-link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__btn-group">
+                <a href="mailto:raulrda.soporte@gmail.com" class="btn btn--text btn--transparent">Contáctame</a>
+                <button type="button" class="btn btn--action" id="menu-toggler">
+                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3333 0.999999L0.999918 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.3333 6.83333L0.999916 6.83333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3333 12.6667L0.999918 12.6667" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!--! === MAIN === -->
+    <main>
+        <!--! === SHOWCASE === -->
+        <section class="showcase" id="home">
+            <div class="showcase__container container">
+                <h1 class="showcase__title title tittle--main">Un programador profesional que te puede ayudar <3</h1>
+                <picture class="showcase__image">
+                    <source media="(min-width: 768px)" srcset="./assets/images/showcase_image_lg.png">
+                    <img src="./assets/images/showcase_image_sm.png" alt="">
+                </picture>
+            </div>
+        </section>
+        <!--! === PORTFOLIO === -->
+        <section class="portfolio" id="proyectos">
+            <div class="portfolio__container container">
+                <div class="portfolio__metadata section-metadata">
+                    <h2 class="title">Mis proyectos</h2>
+                </div>
+                <div class="swiper proyectos-sw">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/Logo_Rabot.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/Logo_Rabot.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!--! === SERVICES === -->
+        <section class="services" id="servicios">
+            <div class="services__container container">
+                <div class="services__metadata section-metadata">
+                    <h2 class="title">Servicios que ofrezco</h2>
+                    <p class="section-metadata__description">Muchos [EDITAR]</p>
+                </div>
+                <div class="services__image-wrapper">
+                    <img src="./assets/images/cris_paul.png" alt="">
+                </div>
+                <div class="services__list">
+                    <div class="services__list-divider">
+                        <article class="services__list-item">
+                            <i class="ri-html5-line services__list-icon"></i>
+                            <h3 class="services__list-title title">Páginas web</h3>
+                            <p class="services__list-description">Hago bots XD</p>
+                        </article>
+                        <article class="services__list-item">
+                            <i class="ri-android-line services__list-icon"></i>
+                            <h3 class="services__list-title title">Aplicaciones</h3>
+                            <p class="services__list-description">Hago bots XD</p>
+                        </article>
+                    </div>
+                    <article class="services__list-item">
+                        <i class="ri-discord-line services__list-icon"></i>
+                        <h3 class="services__list-title title">Bots de Discord</h3>
+                        <p class="services__list-description">Hago bots XD</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--! === ABOUT === -->
+        <section class="about" id="acerca-de-mi">
+            <div class="about__container container">
+                <div class="about__information">
+                    <h2 class="about__information-title title">Acerca de mí</h2>
+                    <p class="about__information-description">Descripción [EDITAR]</p>
+                    <a href="#" class="btn btn--text btn-green">Más información</a>
+                </div>
+                <div class="about__images">
+                    <img src="./assets/images/about_image_top.png" alt="" class="about__images-image about__images-image--top">
+                    <img src="./assets/images/about_image_bottom.png" alt="" class="about__images-image about__images-image--bottom">
+                </div>
+            </div>
+        </section>
+        <!--! === BLOG === -->
+        <section class="blog" id="blogs">
+        <div class="blog__container container">
+            <div class="blog__metadata section-metadata">
+                <h2 class="title">Blogs más recientes</h2>
+                <p class="blog__metadata-description section-metadata__description">Muchos [EDITAR]</p>
+                <a href="#" class="btn btn--text btn--transparent">Ver todas las publicaciones</a>
+            </div>
+            <article class="blog__post post--left">
+                <picture class="blog__post-image">
+                    <source media="(min-width: 450px)" srcset="./assets/images/blog_post_1.png">
+                    <img src="./assets/images/blog_post_1_small.png" alt="">
+                </picture>
+                <h3 class="blog__post-title title">Titulo 1</h3>
+                <a href="#" class="btn btn--text btn--transparent">Ver blog</a>
+            </article>
+            <article class="blog__post post--right">
+                <picture class="blog__post-image">
+                    <source media="(min-width: 450px)" srcset="./assets/images/blog_post_2.png">
+                    <img src="./assets/images/blog_post_2_small.png" alt="">
+                </picture>
+                <h3 class="blog__post-title title">Titulo 2</h3>
+                <a href="#" class="btn btn--text btn--transparent">Ver blog</a>
+            </article>
+        </section>
+    </main>
+    <!--! === FOOTER === -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__group">
+                <h2 class="footer__title title tittle--main">¿Buscando un programador profesional?</h2>
+                <a href="mailto:raulrda.soporte@gmail.com" class="btn btn--text btn--transparent">Contacta conmigo</a>
+            </div>
+            <span class="footer__separator"></span>
+            <div class="footer__group">
+                <a href="./index.html" class="footer__logo">
+                    <img src="./assets/images/Titulo.png" alt="">
+                </a>
+                <p class="footer__description">SIUUUUUUUUUUU</p>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="https://www.instagram.com/Raul_RDA/" class="footer__list-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="https://www.facebook.com/RdeRaulRDA/" class="footer__list-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="https://github.com/RaulRDA" class="footer__list-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="https://www.youtube.com/channel/UCoigvTuDeBGSSBnW6trwMvg" class="footer__list-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="https://twitch.tv/rulaxrda" class="footer__list-link">
+                            <i class="ri-twitch-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="https://discord.gg/wpSq4wapYC" class="footer__list-link">
+                            <i class="ri-discord-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <span class="footer__copyright">&copy; Raul RDA 2022. Todos los derechos reservados.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- SWIPERJS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
