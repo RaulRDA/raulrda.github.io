@@ -73,9 +73,7 @@ sr.reveal('.footer__container', {
 const popToggler = document.querySelector('#popToggler');
 
 const togglePop = () => {
-    swal("No hay más información!", {
-        buttons: ["XD", "Aceptar"],
-      });
+    swal("No hay más información!");
 };
 
 popToggler.addEventListener('click', togglePop);
