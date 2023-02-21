@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
-    <!--! === HEADER === -->
+    <!-- === HEADER === -->
     <header class="header">
         <nav class="navbar container">
             <a href="#" class="navbar__logo">
-                <img src="./assets/images/Titulo.png" alt="" class="navbar__logo-image">
+                <img src="./assets/images/titulo.png" alt="" class="navbar__logo-image">
             </a>
             <div class="navbar__menu">
                 <ul class="navbar__list">
@@ -52,9 +52,9 @@
             </div>
         </nav>
     </header>
-    <!--! === MAIN === -->
+    <!-- === MAIN === -->
     <main>
-        <!--! === SHOWCASE === -->
+        <!-- === SHOWCASE === -->
         <section class="showcase" id="home">
             <div class="showcase__container container">
                 <h1 class="showcase__title title tittle--main">Un programador profesional que te puede ayudar <3</h1>
@@ -64,7 +64,7 @@
                 </picture>
             </div>
         </section>
-        <!--! === PORTFOLIO === -->
+        <!-- === PORTFOLIO === -->
         <section class="portfolio" id="proyectos">
             <div class="portfolio__container container">
                 <div class="portfolio__metadata section-metadata">
@@ -73,17 +73,21 @@
                 <div class="swiper proyectos-sw">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./assets/images/Logo_Rabot.png" alt="">
+                            <a href="/blog-recetas">
+                                <img src="./assets/svg/logo.svg" alt="">
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/Logo_Rabot.png" alt="">
+                            <a href="https://dsc.gg/rabot-invite">
+                                <img src="./assets/images/rabot.png" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
-        <!--! === SERVICES === -->
+        <!-- === SERVICES === -->
         <section class="services" id="servicios">
             <div class="services__container container">
                 <div class="services__metadata section-metadata">
@@ -115,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <!--! === ABOUT === -->
+        <!-- === ABOUT === -->
         <section class="about" id="acerca-de-mi">
             <div class="about__container container">
                 <div class="about__information">
@@ -130,7 +134,7 @@
                 </div>
             </div>
         </section>
-        <!--! === BLOG === -->
+        <!-- === BLOG === -->
         <section class="blog" id="blogs">
         <div class="blog__container container">
             <div class="blog__metadata section-metadata">
@@ -139,21 +143,21 @@
             </div>
             <article class="blog__post post--left">
                 <picture class="blog__post-image">
-                    <img src="./assets/images/blog_1.png" alt="">
+                    <img src="./assets/images/blog_recetas.png" alt="">
                 </picture>
-                <h3 class="blog__post-title title">Para chuparse los dedos</h3>
-                <a href="https://bit.ly/recetasRDA" class="btn btn--text btn--transparent">Ver blog</a>
+                <h3 class="blog__post-title title">Recetas RDA</h3>
+                <a href="/blog-recetas" class="btn btn--text btn--transparent">Ver blog</a>
             </article>
             <article class="blog__post post--right">
                 <picture class="blog__post-image">
-                    <img src="./assets/images/blog_2.png" alt="">
+                    <img src="./assets/images/blog_raul-rda.png" alt="">
                 </picture>
                 <h3 class="blog__post-title title">Raul RDA (este blog)</h3>
                 <a href="#" class="btn btn--text btn--transparent">Ver blog</a>
             </article>
         </section>
     </main>
-    <!--! === FOOTER === -->
+    <!-- === FOOTER === -->
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__group">
@@ -163,7 +167,7 @@
             <span class="footer__separator"></span>
             <div class="footer__group">
                 <a href="#" class="footer__logo">
-                    <img src="./assets/images/Titulo.png" alt="">
+                    <img src="./assets/images/titulo.png" alt="">
                 </a>
                 <p class="footer__description">Si quieres contactar conmigo, haz clic en el botón "CONTÁCTAME" o ve a mis redes sociales:</p>
                 <ul class="footer__list">
@@ -172,11 +176,11 @@
                             <i class="ri-instagram-line"></i>
                         </a>
                     </li>
-                    <li class="footer__list-item">
+                    <!-- <li class="footer__list-item">
                         <a href="https://www.facebook.com/RdeRaulRDA/" class="footer__list-link">
                             <i class="ri-facebook-circle-line"></i>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="footer__list-item">
                         <a href="https://github.com/RaulRDA" class="footer__list-link">
                             <i class="ri-github-line"></i>
@@ -204,6 +208,6 @@
     </footer>
     <!-- SWIPERJS -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
