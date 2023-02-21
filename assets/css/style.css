@@ -1,0 +1,264 @@
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+}
+
+main {
+    max-width: 969px;
+    padding: 35px 0 0 0;
+}
+
+.font-title {
+    font-family: 'Playfair Display', serif;
+}
+
+main h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#box-subtitle {
+    display: flex;
+    align-items: baseline;
+    margin: 12px 0 43px 0;
+}
+
+#box-subtitle img {
+    margin-right: 12px;
+    width: 13px;
+}
+
+.title-description {
+    font-weight: 500;
+    font-style: italic;
+    color: #4F4F4F;
+}
+
+#img-main {
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.recipe {
+    max-width: 650px;
+    height: 100%;
+}
+
+.recipe h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.recipe h4 {
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.recipe-list {
+    list-style-position: inside;
+    list-style-type: none;
+    margin-bottom: 32px;
+}
+
+.recipe-list  li {
+    display: flex;
+    color: #333333;
+    margin-bottom: 14px;
+    align-items: center;
+    
+}
+
+
+.recipe-list li input {
+    margin-right: 17px;
+}
+
+
+.li-instructions {
+    margin-bottom: 100px;
+}
+
+.recipe-list2 {
+    list-style-position: inside;
+    list-style-type: none;
+    width: 100%;
+}
+
+.recipe-list2  li {
+    display: flex;
+    justify-content:start;
+    color: #333333;
+    margin-bottom: 38px;
+    align-items: flex-start;  
+    width: 100%;
+}
+
+.p-instructions {
+    width: 90%;
+}
+
+.number {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+
+    border-radius: 6px;
+    margin-right: 15px;
+
+    background-color: #F2994A;
+    color: #FFFFFF;
+
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#reference {
+    text-decoration: none;
+    color: #BDBDBD;
+    font-style: italic;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    width: 216px;
+    height: 367px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.content-card {
+    display: flex;
+    width: 125px;
+    justify-content: flex-start;
+    gap: 14px;
+    
+
+}
+
+.card-title {
+    font-size: 10px;
+    font-weight: 700;
+    color: #BDBDBD;
+}
+
+
+.card-subtitle {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.s-main{
+    color: #F2994A;
+}
+
+#yields {
+    width: 27px;
+    height: 27px;
+    fill: #F2994A;
+}
+
+.clock {
+    width: 27px;
+   
+}
+
+footer {
+    margin-top: 80px;
+    padding: 24px 0;
+    color: #4F4F4F;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F2994A;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding: 5px 0 5px 20px;
+    cursor: pointer;
+}
+
+.container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: solid 1px #4F4F4F;
+    border-radius: 5px;
+}
+
+.container:hover input ~.checkmark {
+    background-color: #f5f0eb;
+    transition-duration: 100ms;
+}
+
+.container input:checked ~.checkmark {
+    background-color: #F2994A;
+    border: solid 1px #F2994A;
+    transition-duration: 100ms;
+}
+
+.container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container input:checked ~.checkmark:after {
+    display: block;
+    transition-duration: 100ms;
+}
+
