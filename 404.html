@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página no encontrada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f72c4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20%;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+#home-button {
+    background-color: #fff;
+    color: #1f72c4;
+    font-size: 1.2em;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#home-button:hover {
+    background-color: #1f72c4;
+    color: #fff;
+}
+
+#cat-animation {
+    position: fixed;
+    bottom: -250px;
+    right: -250px;
+    transition: all 0.7s ease-in-out;
+}
+
+#cat-animation.active {
+    bottom: 50px;
+    right: 50px;
+}
+
+#cat-animation img {
+    width: 250px;
+    height: 250px;
+}
+
+#cat-text {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    margin-top: 20px;
+    opacity: 0;
+    animation: cat-text 0.7s ease-in-out 1s forwards;
+}
+
+@keyframes cat-text {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+    <div class="container">
+        <h1>¡Ups! No pudimos encontrar la página que buscas</h1>
+        <p>Lo sentimos, pero la página que estás buscando no existe o ha sido eliminada.</p>
+        <button id="home-button">Volver a la página principal</button>
+    </div>
+    
+    <div id="cat-animation">
+        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Gato animado">
+        <p id="cat-text">Volviendo a la página principal</p>
+    </div>
+
+    <script>
+    const homeButton = document.getElementById('home-button');
+const catAnimation = document.getElementById('cat-animation');
+
+homeButton.addEventListener('click', function() {
+    catAnimation.classList.add('active');
+    setTimeout(() => {
+        window.location.href = "/";
+    }, 3000);
+});
+
+    </script>
+</body>
+</html>
 
