@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>miexperienciabkespana.com</title>
+    <link rel="icon" href="../assets/images/bk-ico.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta charset="UTF-8" />
+
+    <style>
+
+      body {
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        margin: 0;
+
+        font-size: 0.9em;
+
+      }
+
+      article {
+
+        padding: 1.5em;
+
+        margin-bottom: 0.5em;
+
+        line-height: 1.7em;
+
+      }
+
+      article a {
+
+        padding-left: 1.5em;
+
+        font-size: 1.2em;
+
+      }
+
+      header {
+
+        background-color: #f5ebdc;
+
+        height: 5em;
+
+        position: relative;
+
+      }
+
+      header img {
+
+        max-height: 100%;
+
+        max-width: 100%;
+
+        width: 4.8em;
+
+        position: absolute;
+
+        top: 0;
+
+        bottom: 0;
+
+        left: 0;
+
+        right: 0;
+
+        margin: auto;
+
+      }
+
+      footer {
+
+        padding: 0.5em;
+
+        background-color: #502314;
+
+        position: fixed;
+
+        bottom: 0;
+
+        width: 100%;
+
+        height: 20%;
+
+      }
+
+      footer a,
+
+      footer p {
+
+        display: block;
+
+        color: white;
+
+        font-size: 0.8em;
+
+        padding: 0.1em;
+
+      }
+
+      h1 {
+
+        font-size: large;
+
+      }
+
+      h2 {
+
+        font-size: 1.2em;
+
+        padding: 0.6em 0 1em 0;
+
+      }
+
+      hr {
+
+        border: 1px solid black;
+
+        margin-top: 3em;
+
+      }
+
+      #powered-by {
+
+        color: white;
+
+        font-size: 0.85em;
+
+        float: right;
+
+        padding-right: 2em;
+
+      }
+
+    </style>
+
+    <script>
+
+      // Cada mes está asociado a un código
+
+      const MONTH_CODES = [
+
+        "BB",
+
+        "LS",
+
+        "JH",
+
+        "PL",
+
+        "BK",
+
+        "WH",
+
+        "FF",
+
+        "BF",
+
+        "CF",
+
+        "CK",
+
+        "CB",
+
+        "VM",
+
+      ];
+
+      const d = new Date();
+
+      const month = d.getMonth();
+
+      const monthCode = MONTH_CODES[month];
+
+      const randomNums = Math.floor(Math.random() * 900000) + 100000;
+
+      window.onload = function () {
+
+        document.getElementsByTagName("codigo")[0].innerHTML =
+
+          monthCode + randomNums;
+
+      };
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <img alt="bk logo" src="../assets/images/bk-ico.png" />
+
+    </header>
+
+    <article>
+
+      <h2>Valide su oferta</h2>
+
+      <p>
+
+        Muchas gracias por participar en la encuesta. A BURGER KING® le gustaría
+
+        invitarlo a visitar nuestros restaurantes nuevamente. No olvide
+
+        presentar la oferta que aparece en su ticket en la próxima visita. Debe
+
+        escribir el siguiente código en su ticket.
+
+      </p>
+
+      <h1>Código de validación: <codigo>ERR</codigo></h1>
+
+      <p>Muchas gracias por su participación.</p>
+
+      <hr />
+
+      <p><b>Manténgase conectado</b></p>
+
+      <a href="https://bk.com/">Conectar a BK.com </a>
+
+    </article>
+
+    <footer>
+
+      <a href="https://bk.com/">Política de privacidad de SMG</a>
+
+      <a href="https://bk.com/">Términos del servicio de SMG</a>
+
+      <a href="https://bk.com/">Política de privacidad</a>
+
+      <a>© 2022 SMG. Reservados todos los derechos.</a>
+
+      <b id="powered-by">Powered by SMG</b>
+
+    </footer>
+
+  </body>
+
+</html>
